@@ -45,7 +45,8 @@ const ComingSoon = () => {
             <Image
                 css={css`
                     display: none;
-                    @media (min-width: 576px) {
+                
+                    @media (min-width: 769px) {
                         display: inherit;
                         width: 33.33%;
                     }
@@ -56,7 +57,7 @@ const ComingSoon = () => {
             <Image
                 css={css`
                     width: 100%;
-                    @media (min-width: 576px) {
+                    @media (min-width: 769px) {
                         width: 33.33%;
                         display: inherit;
                     }
@@ -67,7 +68,7 @@ const ComingSoon = () => {
             <Image
                 css={css`
                     display: none;
-                    @media (min-width: 576px) {
+                    @media (min-width: 769px) {
                         width: 33.33%;
                         display: inherit;
                     }
@@ -89,6 +90,10 @@ const ComingSoon = () => {
                     color: #fffff0;
 
                     @media (min-width: 576px) {
+                        max-width: 55%;
+                    }
+
+                    @media (min-width: 769px) {
                         max-width: 55%;
                     }
                 `}
