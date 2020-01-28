@@ -3,7 +3,6 @@ import Helmet from "react-helmet";
 import Layout from "../components/layout";
 import Profile from "../components/profile";
 
-
 export default () => (
     <>
         <Helmet>

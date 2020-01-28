@@ -9,11 +9,15 @@ const NavLink = styled(Link)`
     width: fit-content;
     -moz-width: -moz-fit-content;
     text-align: center;
-    margin: auto .25rem;
+    margin: auto 0.25rem;
     border-bottom: 0.1rem solid rgba(1, 2, 3, 0);
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
     text-transform: uppercase;
+
+    &:last-of-type {
+        margin-right: 0;
+    }
 
     &:hover {
         border-bottom: 0.1em solid rgba(1, 2, 3, 1);

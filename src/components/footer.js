@@ -3,7 +3,7 @@ import { css } from "@emotion/core";
 
 const Footer = () => (
     <footer>
-        <p 
+        <p
             css={css`
                 font-size: 0.75em;
                 font-weight: 300;
@@ -13,12 +13,14 @@ const Footer = () => (
                 color: #010203;
             `}
         >
-            &#9400; 2020 | Designed by 
+            &#9400; 2020 | Designed by
             <a
                 css={css`
                     color: #010203;
-                    margin-left: .5rem;
+                    margin-left: 0.5rem;
                 `}
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.kaushikdivyansh.dev"
             >
                 Divyansh Kaushik
