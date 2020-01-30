@@ -5,7 +5,25 @@ import { css } from "@emotion/core";
 const Social = () => {
     
     const SocialLink = styled.a`
-        margin: 1rem;
+        margin: auto .75rem;
+        & > svg {
+            height: 1.5rem;
+
+            @media screen and (min-width: 576px) {
+                height: 1.75rem;
+            }
+
+            @media screen and (min-width: 1200px) {
+                height: 2rem;
+            }
+        }
+        @media screen and (min-width: 576px) {
+            margin: auto .875rem;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin: auto 1em;
+        }
     `;
 
     return (
@@ -14,7 +32,22 @@ const Social = () => {
                 display: flex;
                 justify-content: center;
                 align-items: flex-end;
-                margin-top: 0.5rem;
+                margin-bottom: 1rem;
+                @media screen and (min-width: 576px) {
+                    margin-bottom: 1.25rem;
+                }
+
+                @media screen and (min-width: 768px) {
+                    margin-bottom: 1.5rem;
+                }
+
+                @media screen and (min-width: 992px) {
+                    margin-bottom: 1.75rem;
+                }
+
+                @media screen and (min-width: 1200px) {
+                    margin-bottom: 2rem;
+                }
             `}
         >
             <SocialLink
@@ -26,7 +59,6 @@ const Social = () => {
                     css={css`
                         transition: all 0.2s ease-out;
                         color: #010203;
-                        height: 30px;
 
                         &:hover {
                             color: hsl(219, 50%, 41%);
@@ -55,7 +87,6 @@ const Social = () => {
                     css={css`
                         transition: all 0.2s ease-out;
                         color: #010203;
-                        height: 30px;
 
                         &:hover {
                             fill: url(#rg);
@@ -82,7 +113,6 @@ const Social = () => {
                     css={css`
                         transition: all 0.2s ease-out;
                         color: #010203;
-                        height: 30px;
 
                         &:hover {
                             fill: hsl(212, 78%, 54%);

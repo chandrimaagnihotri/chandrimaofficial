@@ -36,18 +36,50 @@ const ComingSoon = () => {
                 display: flex;
                 flex-direction: column nowrap;
                 justify-content: flex-start;
+                margin-bottom: 1rem;
+                
+                @media screen and (min-width: 576px) {
+                    margin-bottom: 1.25rem;
+                }
 
-                @media (min-width: 576px) {
-                    flex-direction: row nowrap;
+                @media screen and (min-width: 768px) {
+                    margin-bottom: 1.5rem;
+                }
+
+                @media screen and (min-width: 992px) {
+                    margin-bottom: 1.75rem;
+                }
+
+                @media screen and (min-width: 1200px) {
+                    margin-bottom: 2rem;
                 }
             `}
         >
             <Image
                 css={css`
-                    display: none;
-                
-                    @media (min-width: 769px) {
+                    @media screen and (min-width: 576px) {
+                        display: none;
+                    }
+
+                    @media screen and (min-width: 768px) {
+                        width: 33.33%;
                         display: inherit;
+                    }
+
+                    @media screen and (min-width: 768px) and (orientation: portrait) {
+                        display: none;
+                    }
+
+                    @media screen and (min-width: 992px) {
+                        width: 33.33%;
+                        display: inherit;
+                    }
+
+                    @media screen and (min-width: 992px) and (orientation: portrait) {
+                        display: none;
+                    }
+
+                    @media screen and (min-width: 1200px) {
                         width: 33.33%;
                     }
                 `}
@@ -57,9 +89,28 @@ const ComingSoon = () => {
             <Image
                 css={css`
                     width: 100%;
-                    @media (min-width: 769px) {
+                    @media screen and (min-width: 576px) {
+                        width: 100%;
+                    }
+
+                    @media screen and (min-width: 768px) {
                         width: 33.33%;
-                        display: inherit;
+                    }
+
+                    @media screen and (min-width: 768px) and (orientation: portrait) {
+                        width: 100%;
+                    }
+
+                    @media screen and (min-width: 992px) {
+                        width: 33.33%;
+                    }
+
+                    @media screen and (min-width: 992px) and (orientation: portrait) {
+                        width: 100%;
+                    }
+
+                    @media screen and (min-width: 1200px) {
+                        width: 33.33%;
                     }
                 `}
                 fluid={imageTwo.sharp.fluid}
@@ -67,10 +118,30 @@ const ComingSoon = () => {
             />
             <Image
                 css={css`
-                    display: none;
-                    @media (min-width: 769px) {
+                    @media screen and (min-width: 576px) {
+                        display: none;
+                    }
+
+                    @media screen and (min-width: 768px) {
                         width: 33.33%;
                         display: inherit;
+                    }
+
+                    @media screen and (min-width: 768px) and (orientation: portrait) {
+                        display: none;
+                    }
+
+                    @media screen and (min-width: 992px) {
+                        width: 33.33%;
+                        display: inherit;
+                    }
+
+                    @media screen and (min-width: 992px) and (orientation: portrait) {
+                        display: none;
+                    }
+
+                    @media screen and (min-width: 1200px) {
+                        width: 33.33%;
                     }
                 `}
                 fluid={imageThree.sharp.fluid}
@@ -78,23 +149,52 @@ const ComingSoon = () => {
             />
             <p
                 css={css`
-                    position: fixed;
-                    z-index: 999;
+                    position: absolute;
+                    z-index: 1;
                     margin: 0 auto;
                     left: 0;
                     right: 0;
                     text-align: center;
-                    top: 40%;
-                    max-width: 55%; /* Set the width of the positioned div */
-                    font-size: 2rem;
+                    letter-spacing: 0.1rem;
+                    top: 45vh;
+                    max-width: 80vw;
+                    font-size: 1.25rem;
                     color: #fffff0;
 
-                    @media (min-width: 576px) {
-                        max-width: 55%;
+                    @media screen and (min-width: 576px) {
+                        font-size: 1.5rem;
+                        max-width: 60vw;
                     }
 
-                    @media (min-width: 769px) {
-                        max-width: 55%;
+                    @media screen and (min-width: 768px) {
+                        max-width: 50vw;
+                        top: 40vh;
+                    }
+
+                    @media screen and (min-width: 768px) and (orientation: portrait) {
+                        max-width: 40vw;
+                        top: 50vh;
+                    }
+
+                    @media screen and (min-width: 992px) {
+                        max-width: 35vw;
+                        top: 35vh;
+                    }
+
+                    @media screen and (min-width: 992px) and (orientation: portrait) {
+                        font-size: 2rem;
+                        max-width: 35vw;
+                        top: 50vh;
+                    }
+
+                    @media screen and (min-width: 1200px) {
+                        font-size: 1.75rem;
+                        max-width: 30vw;
+                        top: 45vh;
+                    }
+
+                    @media screen and (min-width: 1800px) {
+                        font-size: 2rem;
                     }
                 `}
             >
