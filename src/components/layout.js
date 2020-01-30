@@ -66,6 +66,8 @@ const Layout = ({ children }) => {
             <Header />
             <main
                 css={css`
+                    margin-bottom: 1rem;
+
                     @media screen and (min-width: 576px) {
                         margin-bottom: 1.25rem;
                     }

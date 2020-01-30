@@ -5,21 +5,30 @@ import BrandProfile from "./brandProfile";
 const Profile = () => (
     <section
         css={css`
-            margin: auto 1.25rem 1rem;
+            margin: 0rem 1.25rem 1rem;
 
-            @media (min-width: 576px) {
+            @media screen and (min-width: 576px) {
                 display: flex;
                 flex-flow: row nowrap;
                 justify-content: center;
                 align-items: flex-start;
-                margin: auto 2rem 3rem;
+                margin: 0 0 1.25rem 0;
             }
 
-            @media (min-width: 769px) {
+            @media screen and (min-width: 768px) {
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: center;
                 align-items: flex-start;
+                margin: 0 0 1.5rem 0;
+            }
+
+            @media screen and (min-width: 992px) {
+                margin: 0 0 1.75rem 0;
+            }
+
+            @media screen and (min-width: 1200px) {
+                margin: 0 0 2rem 0;
             }
         `}
     >
