@@ -2,6 +2,7 @@ import React from "react";
 import { Global, css } from "@emotion/core";
 import Header from "./header";
 import Footer from "./footer";
+import Social from "./social"
 
 
 const Layout = ({ children }) => {
@@ -9,7 +10,7 @@ const Layout = ({ children }) => {
         <>
             <Global
                 styles={css`
-                        html {
+                    html {
                         -webkit-box-sizing: border-box;
                         box-sizing: border-box;
                         min-height: 100vh;
@@ -58,12 +59,33 @@ const Layout = ({ children }) => {
                         -webkit-font-smoothing: antialiased;
                         -moz-osx-font-smoothing: grayscale;
                         line-height: 1.5;
-                        font-size: 1rem;
+                        font-size: 16px;
                     }
                 `}
             />
             <Header />
-            <main>{children}</main>
+            <main
+                css={css`
+                    @media screen and (min-width: 576px) {
+                        margin-bottom: 1.25rem;
+                    }
+
+                    @media screen and (min-width: 768px) {
+                        margin-bottom: 1.5rem;
+                    }
+
+                    @media screen and (min-width: 992px) {
+                        margin-bottom: 1.75rem;
+                    }
+
+                    @media screen and (min-width: 1200px) {
+                        margin-bottom: 2rem;
+                    }
+                `}
+            >
+                {children}
+            </main>
+            <Social />
             <Footer />
         </>
     );
