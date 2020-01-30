@@ -8,22 +8,28 @@ const BrandProfile = () => {
         margin-top: 1rem;
 
         &:first-of-type {
-            margin-top: 0.5rem;
+            margin-top: 0.25rem;
         }
 
         &:last-of-type {
             margin-bottom: 0;
         }
 
-        @media (min-width: 769px) {
-            max-width: 45em;
+        font-size: 1rem;
+
+        @media screen and (min-width: 576px) {
+            max-width: 45rem;
         }
 
-        @media (min-width: 1025px) {
-            max-width: 51em;
+        @media screen and (min-width: 768px) {
+            max-width: 45rem;
         }
 
-        @media (min-width: 1919px) {
+        @media screen and (min-width: 992px) {
+            max-width: 51rem;
+        }
+
+        @media screen and (min-width: 1200px) {
             max-width: 58rem;
         }
     `;
@@ -35,40 +41,22 @@ const BrandProfile = () => {
     `;
 
     return (
-        <div
-            css={css`
-                margin-top: 1rem;
-
-                @media (min-width: 576px) {
-                    margin-top: 0;
-                }
-
-                @media (min-width: 769px) {
-                    margin-top: 0;
-                }
-            `}
-        >
+        <div>
             <ProfilePhoto />
-            <h2
+            <h1
                 css={css`
                     text-transform: uppercase;
-                    margin-top: 1rem;
+                    font-size: 1.25rem;
+                    letter-spacing: 0.1rem;
+                    font-weight: 700;
 
-                    @media (min-width: 576px) {
-                        margin-top: 0;
-                    }
-
-                    @media (min-width: 769px) {
-                        margin-top: 0;
-                    }
-
-                    @media (min-width: 1919px) {
-                        margin-top: 1rem;
+                    @media screen and (min-width: 992px) {
+                       font-size: 1.5rem;
                     }
                 `}
             >
                 Our Story
-            </h2>
+            </h1>
             <ProfilePara>
                 A graduate of Fashion Design from the country’s pre-eminent
                 institution National Institute of Fashion Technology Mumbai,

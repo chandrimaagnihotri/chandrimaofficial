@@ -20,30 +20,32 @@ const ProfilePhoto = () => {
         <Image
             css={css`
                 box-shadow: 0 10px 20px hsla(0, 0%, 0%, 0.15),
-                    0 3px 6px hsla(0, 0%, 0%, 0.1),
-                    0 10px 20px hsla(0, 0%, 0%, 0.15),
                     0 3px 6px hsla(0, 0%, 0%, 0.1);
 
-                @media (min-width: 576px) {
-                    width: 50rem;
+                margin-bottom: 1rem;
+
+                @media screen and (min-width: 576px) {
+                    width: 15rem;
+                    float: left;
+                    margin: 0 1.25rem 0.5rem 0;
                 }
 
-                @media (min-width: 769px) {
+                @media screen and (min-width: 768px) {
                     width: 17rem;
                     float: left;
-                    margin: 1rem 2rem 0.5rem 0;
+                    margin: 0 1.5rem 0.75rem 0;
                 }
 
-                @media (min-width: 1025px) {
+                @media screen and (min-width: 992px) {
                     width: 20rem;
                     float: left;
-                    margin: 1rem 2rem 1rem 0;
+                    margin: 0 1.75rem 1rem 0;
                 }
 
-                @media (min-width: 1919px) {
-                    width: 30rem;
+                @media screen and (min-width: 1200px) {
+                    width: 29rem;
                     float: left;
-                    margin: 1rem 2rem 0 0;
+                    margin: 0 2rem 0 0;
                 }
             `}
             fluid={profilePhoto.sharp.fluid}
