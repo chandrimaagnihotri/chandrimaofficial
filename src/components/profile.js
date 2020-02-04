@@ -12,7 +12,7 @@ const Profile = () => (
                 flex-flow: row nowrap;
                 justify-content: center;
                 align-items: flex-start;
-                margin: 0 0 1.25rem 0;
+                margin: 0 1.5rem 1.25rem;
             }
 
             @media screen and (min-width: 768px) {

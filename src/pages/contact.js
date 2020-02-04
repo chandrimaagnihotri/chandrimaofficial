@@ -1,7 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import Layout from "../components/layout";
-import ContactForm from "../components/contactForm";
+import ContactUs from "../components/contactUs";
 
 export default () => (
     <>
@@ -9,7 +9,7 @@ export default () => (
             <title>Chandrima Agnihotri | Contact</title>
         </Helmet>
         <Layout>
-            <ContactForm />
+            <ContactUs />
         </Layout>
     </>
 );

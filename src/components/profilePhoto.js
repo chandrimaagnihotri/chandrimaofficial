@@ -25,25 +25,25 @@ const ProfilePhoto = () => {
                 margin-bottom: 1rem;
 
                 @media screen and (min-width: 576px) {
-                    width: 15rem;
+                    width: 50vw;
                     float: left;
                     margin: 0 1.25rem 0.5rem 0;
                 }
 
                 @media screen and (min-width: 768px) {
-                    width: 17rem;
+                    width: 40vw;
                     float: left;
                     margin: 0 1.5rem 0.75rem 0;
                 }
 
                 @media screen and (min-width: 992px) {
-                    width: 20rem;
+                    width: 30vw;
                     float: left;
                     margin: 0 1.75rem 1rem 0;
                 }
 
                 @media screen and (min-width: 1200px) {
-                    width: 29rem;
+                    width: 25vw;
                     float: left;
                     margin: 0 2rem 0 0;
                 }
