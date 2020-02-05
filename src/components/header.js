@@ -5,7 +5,7 @@ import { Link } from "gatsby";
 
 const NavLink = styled(Link)`
     text-decoration: none;
-    color: hsl(0, 0%, 40%);
+    color: hsla(0, 0%, 40%, 1);
     width: fit-content;
     -moz-width: -moz-fit-content;
     text-align: center;
@@ -26,7 +26,7 @@ const NavLink = styled(Link)`
     }
 
     &.active {
-        color: hsl(0, 0%, 10%);
+        color: hsla(0, 0%, 10%, 1);
         border-bottom: 0.1rem solid hsla(0, 0%, 10%, 1);
         font-weight: 500;
     }

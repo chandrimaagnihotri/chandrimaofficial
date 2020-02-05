@@ -12,6 +12,8 @@ const ContactContainer = () => (
                 @media screen and (min-width: 768px) {
                     display: flex;
                     align-items: center;
+                    margin: 0 auto;
+                    width: 80vw;
                 }
             `}
         >

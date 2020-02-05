@@ -48,6 +48,9 @@ const PressContainer = () => {
 
                 @media screen and (min-width: 992px) {
                     flex-flow: row;
+                    margin: 0 auto;
+                    width: 80vw;
+
                 }
             `}
         >

@@ -37,7 +37,7 @@ const ComingSoon = () => {
                 flex-direction: column nowrap;
                 justify-content: flex-start;
                 margin-bottom: 1rem;
-                
+
                 @media screen and (min-width: 576px) {
                     margin-bottom: 1.25rem;
                 }
@@ -159,7 +159,7 @@ const ComingSoon = () => {
                     top: 45vh;
                     max-width: 80vw;
                     font-size: 1.25rem;
-                    color: #fffff0;
+                    color: hsla(0, 0%, 90%, 1);
 
                     @media screen and (min-width: 576px) {
                         font-size: 1.5rem;
