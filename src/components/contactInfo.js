@@ -35,12 +35,19 @@ const ContactInfo = () => (
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                C-24, C Block, Sector 6, Noida, Uttar Pradesh 110096, India
+                C-24, C Block, Sector 6, Noida, Uttar Pradesh 201301, India
             </Text>
         </Group>
         <Group>
             <Header>Phone:</Header>
-            <Text href="tel:+91 123456789">+91 123456789</Text>
+            <Text href="tel:+918527015651">+91 8527015651</Text>
+            <Text href="tel:+911204570471">+91 120 4570471</Text>
+        </Group>
+        <Group>
+            <Header>Email:</Header>
+            <Text href="mailto: design.chandrima@gmail.com">
+                design.chandrima@gmail.com
+            </Text>
         </Group>
     </section>
 );
