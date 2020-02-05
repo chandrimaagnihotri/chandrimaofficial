@@ -12,6 +12,14 @@ const PressArticlePhoto = () => (
             @media screen and (min-width: 992px) {
                 width: 50vw;
             }
+            
+            @media screen and (min-width: 1366px) {
+                width: 40vw;
+            }
+            
+            @media screen and (min-width: 1920px) {
+                width: 50vw;
+            }
         `}
     />
 );
