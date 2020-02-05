@@ -1,8 +1,10 @@
 import React from "react";
 import { Global, css } from "@emotion/core";
+// import Helmet from "react-helmet"
 import Header from "./header";
 import Footer from "./footer";
 import Social from "./social"
+
 
 
 const Layout = ({ children }) => {
