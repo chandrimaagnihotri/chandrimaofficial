@@ -1,6 +1,11 @@
 let path = require("path")
 
 module.exports = {
+    siteMetadata: {
+        title: "Chandrima Agnihotri",
+        description: "Luxury ready to wear for women. Made in India",
+        author: "Chandrima Agnihotri",
+    },
     plugins: [
         "gatsby-plugin-react-helmet",
         "gatsby-plugin-netlify",
@@ -18,12 +23,6 @@ module.exports = {
         //     ],
         //   },
         // },
-        {
-            resolve: "gatsby-plugin-html-attributes",
-            options: {
-                lang: "en",
-            },
-        },
         {
             resolve: "gatsby-source-filesystem",
             options: {

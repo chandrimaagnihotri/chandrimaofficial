@@ -83,7 +83,7 @@ const StoryProfile = () => {
                 The label
                 <BrandName>Chandrima</BrandName>
                 celebrates diversity in cultures and craft forms by creating
-                ready-to-wear Women's wear that is for the urban woman of today.
+                ready-to-wear womenswear that is for the urban woman of today.
             </ProfilePara>
             <ProfilePara>
                 The brand embodies the idea of India itself. It is a blend of

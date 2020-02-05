@@ -1,13 +1,11 @@
 import React from "react";
-import Helmet from "react-helmet";
 import Layout from "../components/layout";
 import StoryContainer from "../components/storyContainer";
+import SEO from "../components/seo";
 
 export default () => (
     <>
-        <Helmet>
-            <title>Chandrima Agnihotri | Story</title>
-        </Helmet>
+        <SEO title="Story" />
         <Layout>
             <StoryContainer />
         </Layout>
