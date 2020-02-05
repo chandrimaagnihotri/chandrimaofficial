@@ -1,7 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import Layout from "../components/layout";
-import Profile from "../components/profile";
+import StoryContainer from "../components/storyContainer";
 
 export default () => (
     <>
@@ -9,7 +9,7 @@ export default () => (
             <title>Chandrima Agnihotri | Story</title>
         </Helmet>
         <Layout>
-            <Profile />
+            <StoryContainer />
         </Layout>
     </>
 );

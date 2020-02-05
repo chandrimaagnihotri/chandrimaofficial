@@ -1,9 +1,9 @@
 import React from "react";
-import Article from "./articles";
-import NewsPaperPhoto from "./newspaperPhoto";
+import PressArticle from "./pressArticle";
+import PressArticlePhoto from "./pressArticlePhoto";
 import { css } from "@emotion/core";
 
-const NewsArticles = () => {
+const PressContainer = () => {
     let articlesUrl = {
         article1: {
             url:
@@ -51,7 +51,7 @@ const NewsArticles = () => {
                 }
             `}
         >
-            <NewsPaperPhoto />
+            <PressArticlePhoto />
             <section
                 css={css`
                     display: flex;
@@ -73,7 +73,6 @@ const NewsArticles = () => {
                         font-weight: 700;
                         align-self: flex-start;
 
-
                         @media screen and (min-width: 992px) {
                             font-size: 1.5rem;
                         }
@@ -81,27 +80,27 @@ const NewsArticles = () => {
                 >
                     Press
                 </h2>
-                <Article
+                <PressArticle
                     header={articlesUrl.article1.header}
                     url={articlesUrl.article1.url}
                     description={articlesUrl.article1.description}
                 />
-                <Article
+                <PressArticle
                     header={articlesUrl.article2.header}
                     url={articlesUrl.article2.url}
                     description={articlesUrl.article2.description}
                 />
-                <Article
+                <PressArticle
                     header={articlesUrl.article3.header}
                     url={articlesUrl.article3.url}
                     description={articlesUrl.article3.description}
                 />
-                <Article
+                <PressArticle
                     header={articlesUrl.article4.header}
                     url={articlesUrl.article4.url}
                     description={articlesUrl.article4.description}
                 />
-                <Article
+                <PressArticle
                     header={articlesUrl.article5.header}
                     url={articlesUrl.article5.url}
                     description={articlesUrl.article5.description}
@@ -111,4 +110,4 @@ const NewsArticles = () => {
     );
 };
 
-export default NewsArticles;
+export default PressContainer;

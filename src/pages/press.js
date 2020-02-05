@@ -1,7 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import Layout from "../components/layout";
-import NewsArticles from "../components/newsArticles";
+import PressContainer from "../components/pressContainer";
 
 
 export default () => (
@@ -10,7 +10,7 @@ export default () => (
             <title>Chandrima Agnihotri | Press</title>
         </Helmet>
         <Layout>
-            <NewsArticles />            
+            <PressContainer />            
         </Layout>
     </>
 );

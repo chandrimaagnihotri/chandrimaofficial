@@ -1,10 +1,10 @@
 import React from "react";
-import newsPaperPhoto from "../images/newspaper.svg"
+import pressPhoto from "../images/newspaper.svg"
 import { css } from "@emotion/core";
 
-const NewsPaper = () => (
+const PressArticlePhoto = () => (
     <img
-        src={newsPaperPhoto}
+        src={pressPhoto}
         alt="Newspaper SVG"
         css={css`
             width: 100vw;
@@ -16,4 +16,4 @@ const NewsPaper = () => (
     />
 );
 
-export default NewsPaper;
+export default PressArticlePhoto;
