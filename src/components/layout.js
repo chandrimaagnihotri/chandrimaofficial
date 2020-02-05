@@ -60,6 +60,7 @@ const Layout = ({ children }) => {
                         -moz-osx-font-smoothing: grayscale;
                         line-height: 1.5;
                         font-size: 16px;
+                        color: hsla(0, 0%, 10%, 1);
                     }
                 `}
             />

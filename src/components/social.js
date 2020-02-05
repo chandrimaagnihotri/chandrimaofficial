@@ -58,13 +58,13 @@ const Social = () => {
                 <svg
                     css={css`
                         transition: all 0.2s ease-out;
-                        color: #010203;
+                        color: hsla(0, 0%, 10%, 1);
 
                         &:hover {
                             color: hsl(219, 50%, 41%);
                         }
                     `}
-                    fill="#010203"
+                    fill="hsla(0, 0%, 10%, 1)"
                     aria-hidden="true"
                     focusable="false"
                     role="img"
@@ -86,13 +86,13 @@ const Social = () => {
                 <svg
                     css={css`
                         transition: all 0.2s ease-out;
-                        color: #010203;
+                        color: hsla(0, 0%, 10%, 1);
 
                         &:hover {
                             fill: url(#rg);
                         }
                     `}
-                    fill="#010203"
+                    fill="hsla(0, 0%, 10%, 1)"
                     aria-hidden="true"
                     role="img"
                     xmlns="http://www.w3.org/2000/svg"
@@ -112,13 +112,13 @@ const Social = () => {
                 <svg
                     css={css`
                         transition: all 0.2s ease-out;
-                        color: #010203;
+                        color: hsla(0, 0%, 10%, 1);
 
                         &:hover {
                             fill: hsl(212, 78%, 54%);
                         }
                     `}
-                    fill="#010203"
+                    fill="hsla(0, 0%, 10%, 1)"
                     aria-hidden="true"
                     role="img"
                     xmlns="http://www.w3.org/2000/svg"

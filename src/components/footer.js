@@ -9,17 +9,17 @@ const Footer = () => (
                 letter-spacing: 0.1em;
                 width: 100vw;
                 text-align: center;
-                color: hsl(0, 0%, 10%);
+                color: hsla(0, 0%, 10%, 1);
             `}
         >
             &#9400; 2020 | Designed by
             <a
                 css={css`
-                    color: hsl(0, 0%, 10%);
+                    color: hsla(0, 0%, 10%, 1);
                     margin-left: 0.5rem;
 
                     &:active {
-                        color: hsl(0, 0%, 10%);
+                        color: hsla(0, 0%, 10%, 1);
                     }
                 `}
                 target="_blank"
