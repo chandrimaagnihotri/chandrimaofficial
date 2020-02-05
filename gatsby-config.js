@@ -3,7 +3,8 @@ let path = require("path")
 module.exports = {
     siteMetadata: {
         title: "Chandrima Agnihotri",
-        description: "Luxury ready to wear for women. Made in India",
+        description:
+            "Luxury ready to wear for women | Modern elegance and craftsmanship | Made in India",
         author: "Chandrima Agnihotri",
     },
     plugins: [
