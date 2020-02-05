@@ -9,7 +9,7 @@ const ContactPhoto = () => (
         css={css`
             width: 100vw;
 
-            @media screen and (min-width: 992px) {
+            @media screen and (min-width: 768px) {
                 width: 50vw;
             }
         `}

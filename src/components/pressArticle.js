@@ -1,7 +1,7 @@
 import React from "react";
 import { css } from "@emotion/core";
 
-const Article = props => {
+const PressArticle = props => {
     return (
         <div
             css={css`
@@ -43,4 +43,4 @@ const Article = props => {
     );
 };
 
-export default Article;
+export default PressArticle;

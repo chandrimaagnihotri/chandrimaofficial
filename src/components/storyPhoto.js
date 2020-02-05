@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import Image from "gatsby-image";
 import { css } from "@emotion/core";
 
-const ProfilePhoto = () => {
+const StoryPhoto = () => {
     const { profilePhoto } = useStaticQuery(graphql`
         query {
             profilePhoto: file(relativePath: { eq: "profile.png" }) {
@@ -55,4 +55,4 @@ const ProfilePhoto = () => {
     );
 };
 
-export default ProfilePhoto;
+export default StoryPhoto;

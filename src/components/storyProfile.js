@@ -1,9 +1,9 @@
 import React from "react";
 import { css } from "@emotion/core";
 import styled from "@emotion/styled";
-import ProfilePhoto from "./profilePhoto";
+import StoryPhoto from "./storyPhoto";
 
-const BrandProfile = () => {
+const StoryProfile = () => {
     const ProfilePara = styled.p`
         margin-top: 1rem;
 
@@ -42,7 +42,7 @@ const BrandProfile = () => {
 
     return (
         <div>
-            <ProfilePhoto />
+            <StoryPhoto />
             <h1
                 css={css`
                     text-transform: uppercase;
@@ -51,7 +51,7 @@ const BrandProfile = () => {
                     font-weight: 700;
 
                     @media screen and (min-width: 992px) {
-                       font-size: 1.5rem;
+                        font-size: 1.5rem;
                     }
                 `}
             >
@@ -95,4 +95,4 @@ const BrandProfile = () => {
     );
 };
 
-export default BrandProfile;
+export default StoryProfile;

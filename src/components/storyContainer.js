@@ -1,8 +1,8 @@
 import React from "react";
 import { css } from "@emotion/core";
-import BrandProfile from "./brandProfile";
+import StoryProfile from "./storyProfile";
 
-const Profile = () => (
+const StoryContainer = () => (
     <section
         css={css`
             margin: 0rem 1.25rem 1rem;
@@ -32,8 +32,8 @@ const Profile = () => (
             }
         `}
     >
-        <BrandProfile />
+        <StoryProfile />
     </section>
 );
 
-export default Profile;
+export default StoryContainer;
