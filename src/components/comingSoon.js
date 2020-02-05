@@ -158,12 +158,13 @@ const ComingSoon = () => {
                     letter-spacing: 0.1rem;
                     top: 45vh;
                     max-width: 80vw;
-                    font-size: 1.25rem;
+                    font-size: 1rem;
                     color: hsla(0, 0%, 90%, 1);
 
                     @media screen and (min-width: 576px) {
                         font-size: 1.5rem;
                         max-width: 60vw;
+                        font-size: 1.25rem;
                     }
 
                     @media screen and (min-width: 768px) {
