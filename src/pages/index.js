@@ -1,16 +1,14 @@
 import React from "react";
-import Helmet from "react-helmet";
 import Layout from "../components/layout";
 import ComingSoon from "../components/comingSoon";
+import SEO from "../components/seo";
 
 export default () => (
     <>
-        <Helmet>
-            <title>Chandrima Agnihotri | Fashion Designer</title>
-        </Helmet>
+        <SEO title="Home" />
         <Layout>
             <ComingSoon />
         </Layout>
     </>
-)
+);
 
