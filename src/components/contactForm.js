@@ -50,7 +50,7 @@ const Label = styled.label`
 class ContactForm extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { name: "", email: "", message: "" };
+        this.state = { name: "", email: "", phone: "", message: "" };
     }
 
     /* Here’s the juicy bit for posting the form submission */
@@ -76,7 +76,7 @@ class ContactForm extends React.Component {
     handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
     render() {
-        const { name, email, message } = this.state;
+        const { name, email, phone, message } = this.state;
         return (
             <form
                 css={css`
@@ -93,6 +93,7 @@ class ContactForm extends React.Component {
                         placeholder="Your Name"
                         value={name}
                         onChange={this.handleChange}
+                        required
                     />
                 </Label>
                 <Label>
@@ -103,6 +104,18 @@ class ContactForm extends React.Component {
                         placeholder="Your Email"
                         value={email}
                         onChange={this.handleChange}
+                        required
+                    />
+                </Label>
+                <Label>
+                    {/* Email */}
+                    <input
+                        type="phone"
+                        name="phone"
+                        placeholder="Your Phone Number"
+                        value={phone}
+                        onChange={this.handleChange}
+                        required
                     />
                 </Label>
                 <Label>
@@ -113,18 +126,26 @@ class ContactForm extends React.Component {
                         placeholder="Your Message"
                         onChange={this.handleChange}
                         rows="5"
+                        required
                     />
                 </Label>
-                <input css={css`margin: 0;`} type="hidden" name="form-name" value="contact" />
+                <input
+                    css={css`
+                        margin: 0;
+                    `}
+                    type="hidden"
+                    name="form-name"
+                    value="contact"
+                />
                 <button
                     type="submit"
                     css={css`
                         display: block;
                         font-size: 1rem;
-                        background-color: hsla(0, 0%, 10%, 1.00);
+                        background-color: hsla(0, 0%, 10%, 1);
                         box-shadow: 0 15px 35px hsla(0, 0%, 0%, 0.2);
                         border: 0px;
-                        color: hsla(0, 0%, 95%, 1.00);
+                        color: hsla(0, 0%, 95%, 1);
                         border-radius: 0.25rem;
                         padding: 0.5rem 0.75rem;
                         cursor: pointer;
