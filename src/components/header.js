@@ -86,6 +86,7 @@ const Header = ({ clickHandler }) => {
                     font-size: 1.5rem;
                     letter-spacing: 0.3rem;
                     text-decoration: none;
+                    z-index: 2;
 
                     @media screen and (min-width: 576px) {
                         font-size: 2rem;
@@ -122,7 +123,8 @@ const Header = ({ clickHandler }) => {
                     cursor: pointer;
                     padding: 0;
 
-                    &:active, :hover {
+                    &:active,
+                    :hover {
                         outline: none;
                     }
 
