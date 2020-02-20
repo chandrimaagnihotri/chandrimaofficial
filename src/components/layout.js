@@ -1,8 +1,8 @@
 import React from "react";
 import { Global, css } from "@emotion/core";
-import Header from "./header";
+import Menu from "./menu"
 import Footer from "./footer";
-import Social from "./social"
+import Social from "./social";
 
 
 
@@ -65,7 +65,7 @@ const Layout = ({ children }) => {
                     }
                 `}
             />
-            <Header />
+            <Menu />
             <main
                 css={css`
                     margin-bottom: 1rem;
