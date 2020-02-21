@@ -28,6 +28,7 @@ const Para = styled.p`
 
     @media screen and (min-width: 992px) {
         width: 40em;
+        text-align: center;
     }
 `;
 
