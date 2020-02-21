@@ -87,6 +87,7 @@ const HomeRunway = () => {
                 css={css`
                     @media screen and (min-width: 786px) {
                         display: flex;
+                        flex-flow: column;
                         justify-content: center;
                         align-items: center;
                     }
@@ -120,11 +121,15 @@ const HomeRunway = () => {
                         text-decoration: none;
                         color: inherit;
                         text-align: center;
-                        border-bottom: 0.1rem solid hsla(0, 0%, 40%, .2);
+                        border-bottom: 0.1rem solid hsla(0, 0%, 40%, 0.2);
                         -webkit-transition: all 0.3s ease-out;
                         transition: all 0.3s ease-out;
                         letter-spacing: 0.1rem;
-                        
+
+                        @media screen and (min-width: 786px) {
+                            margin: 0rem;
+                        }
+
                         &:hover {
                             border-bottom: 0.1rem solid hsla(0, 0%, 40%, 1);
                         }

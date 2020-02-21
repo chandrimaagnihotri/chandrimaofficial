@@ -52,7 +52,7 @@ const HomeCampaignImage = () => {
 
                 @media screen and (min-width: 1200px) {
                     margin-bottom: 2rem;
-                    height: 75vh;
+
                 }
             `}
         >
@@ -86,10 +86,7 @@ const HomeCampaignImage = () => {
                 `}
                 fluid={imageOne.sharp.fluid}
                 fadeIn={true}
-                imgStyle={{
-                    objectFit: "cover",
-                    objectPosition: "0 0",
-                }}
+              
             />
             <Image
                 css={css`
@@ -120,10 +117,7 @@ const HomeCampaignImage = () => {
                 `}
                 fluid={imageTwo.sharp.fluid}
                 fadeIn={true}
-                imgStyle={{
-                    objectFit: "cover",
-                    objectPosition: "0 0",
-                }}
+               
             />
             <Image
                 css={css`
@@ -155,10 +149,7 @@ const HomeCampaignImage = () => {
                 `}
                 fluid={imageThree.sharp.fluid}
                 fadeIn={true}
-                imgStyle={{
-                    objectFit: "cover",
-                    objectPosition: "0 0",
-                }}
+                
             />
         </section>
     );
